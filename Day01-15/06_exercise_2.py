@@ -5,6 +5,7 @@
 2、求最小公倍数的函数
 3、判断一个数是不是回文数的函数。
 4、判断一个数是不是素数
+5、求一个数的反向排列：1234 ——> 4321
 """
 
 
@@ -57,6 +58,17 @@ def is_prime(num):
         if num % factor == 0:
             return False
     return True if num != 1 else False
+
+
+def reversed_num(num):
+    """
+    求一个数的反向排列：1234 ——> 4321
+    :param num:
+    :return:
+    """
+    if num < 0:
+        raise TypeError('输入的数必须为正数!')
+    return int(str(a)[::-1])
 
 
 if __name__ == '__main__':
